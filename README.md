@@ -1,6 +1,6 @@
 # Docker environment for Codeiginter 3
 
-### PHP Extension
+### PHP Extensions
 - Mysqli
 - PDO Mysql
 - Redis
