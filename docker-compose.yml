@@ -3,8 +3,6 @@ services:
   app:
     container_name: project_name
     build: .
-    restart: always
-    tty: true
     ports:
       - '3000:80'
     volumes:
