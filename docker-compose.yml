@@ -1,7 +1,7 @@
 version: '3'
 services:
   app:
-    container_name: sakoo_backend
+    container_name: project_name
     build: .
     restart: always
     tty: true
