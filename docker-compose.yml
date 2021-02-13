@@ -1,0 +1,21 @@
+version: '3'
+services:
+  app:
+    container_name: sakoo_backend
+    build: .
+    restart: always
+    tty: true
+    ports:
+      - '3000:80'
+    volumes:
+      - ./src:/var/www/html
+      - ./httpd/vhost.conf/:/etc/apache2/sites-enabled/000-default.conf
+      - ./php/php.ini:/usr/local/etc/php/php.ini
+    networks:
+      - default
+
+#Docker Networks
+networks:
+  default:
+    external:
+      name: db_network
